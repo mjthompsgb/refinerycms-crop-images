@@ -1,0 +1,27 @@
+sk:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: Pridať Crop Image
+            reorder: Preusporiadať Crop Images
+            reorder_done: Koniec radenia Crop Images
+          records:
+            title: Crop Images
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Crop Images. Kliknite na "Pridať Crop Image" pre pridanie prvého crop image.
+          crop_image:
+            view_live_html: Zobraziť náhľad crop image<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť crop image
+            delete: Zmazať crop image
+      crop_images:
+        show:
+          other: Daľšie Crop Images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image

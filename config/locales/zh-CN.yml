@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: 建立新的 Crop Image
+            reorder: 对 Crop Images 重新排序
+            reorder_done: 对 Crop Images 的重新排序结束
+          records:
+            title: Crop Images
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Crop Images yet. Click "Add New Crop Image" to add your first crop image.
+            no_items_yet: 目前没有 Crop Images . 点击 "Add New Crop Image" 创建一个crop image.
+          crop_image:
+            view_live_html: 查看 crop image 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 crop image
+            delete: 永久删除 crop image
+      crop_images:
+        show:
+          other: 其他 Crop Images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image

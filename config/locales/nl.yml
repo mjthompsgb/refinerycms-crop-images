@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: Maak een nieuwe Crop Image
+            reorder: Wijzig de volgorde van de Crop Images
+            reorder_done: Klaar met het wijzingen van de volgorde van de Crop Images
+          records:
+            title: Crop Images
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Crop Images. Druk op 'Maak een nieuwe Crop Image' om de eerste aan te maken.
+          crop_image:
+            view_live_html: Bekijk deze crop image op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze crop image
+            delete: Verwijder deze crop image voor eeuwig
+      crop_images:
+        show:
+          other: Andere Crop Images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image

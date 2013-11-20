@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+#        article: masculino/femenino
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: Crear nuevo crop image
+            reorder: Reordenar crop images
+            reorder_done: Reordenación de crop images completada
+          records:
+            title: Crop Images
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay crop images todavía. Pulsa en "Crear nuevo Crop Image" para crear tu primer crop image.
+          crop_image:
+            view_live_html: Ver este crop image como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este crop image
+            delete: Borrar este crop image para siempre
+      crop_images:
+        show:
+          other: Otros crop images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image

@@ -1,0 +1,17 @@
+<%= form_for [refinery, :crop_images_admin, @crop_image] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @crop_image,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :original_image_id -%>
+    <%= f.number_field :original_image_id  -%>
+
+  </div>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.crop_images.admin.crop_images.crop_image'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete') %>
+<% end -%>

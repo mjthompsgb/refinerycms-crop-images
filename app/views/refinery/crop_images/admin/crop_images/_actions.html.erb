@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::CropImages::Admin::CropImagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.crop_images_admin_crop_images_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_crop_images_admin_crop_image_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::CropImages::Admin::CropImagesController.sortable? && ::Refinery::CropImages::CropImage.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Crop Images"),
+                 refinery.crop_images_admin_crop_images_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Crop Images"),
+                 refinery.crop_images_admin_crop_images_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

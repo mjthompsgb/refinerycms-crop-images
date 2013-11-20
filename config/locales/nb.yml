@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: Lag en ny Crop Image
+            reorder: Endre rekkefølgen på Crop Images
+            reorder_done: Ferdig å endre rekkefølgen Crop Images
+          records:
+            title: Crop Images
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Crop Images enda. Klikk på "Lag en ny Crop Image" for å legge til din første crop image.
+          crop_image:
+            view_live_html: Vis hvordan denne crop image ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne crop image
+            delete: Fjern denne crop image permanent
+      crop_images:
+        show:
+          other: Andre Crop Images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image

@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      crop_images:
+        title: Crop Images
+    crop_images:
+      admin:
+        crop_images:
+          actions:
+            create_new: Add New Crop Image
+            reorder: Reorder Crop Images
+            reorder_done: Done Reordering Crop Images
+          records:
+            title: Crop Images
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Crop Images yet. Click "Add New Crop Image" to add your first crop image.
+          crop_image:
+            view_live_html: View this crop image live <br/><em>(opens in a new window)</em>
+            edit: Edit this crop image
+            delete: Remove this crop image forever
+      crop_images:
+        show:
+          other: Other Crop Images
+  activerecord:
+    attributes:
+      'refinery/crop_images/crop_image':
+        original_image_id: Original Image
