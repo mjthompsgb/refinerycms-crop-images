@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
-  s.name              = 'refinerycms-crop_images'
+  s.name              = 'refinerycms-crop-images'
   s.version           = '0.0.1'
   s.authors           = ["Matt Thompson", "Chris Wise"]
   s.email             = ["mjthompsgb@gmail.com", "cwise@murmurinformatics.com"]
